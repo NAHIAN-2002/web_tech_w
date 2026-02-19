@@ -6,7 +6,7 @@
 
 .catagory{
     font-size: 30px;
-    background-color: aqua;
+    background-color: hsl(207, 97%, 55%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -17,6 +17,12 @@
     width: 200px;
     padding: 10px;
     border: 5px solid beige;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.box:hover {
+  outline: 5px solid rgb(191, 0, 255);
 }
 
 .details{
@@ -30,4 +36,5 @@
 .container{
     display: flex;
     gap: 5px;
+    margin: 10px;
 }
