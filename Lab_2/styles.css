@@ -1,0 +1,33 @@
+.website{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+.catagory{
+    font-size: 30px;
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 200px;
+    padding: 10px;
+    border: 5px solid beige;
+}
+
+.details{
+
+}
+.price{
+    font-size: 20px;
+    color: green;
+}
+
+.container{
+    display: flex;
+    gap: 5px;
+}
