@@ -8,17 +8,19 @@
     font-size: 30px;
     background-color: hsl(207, 97%, 55%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 
 }
 
 .box{
     background-color: rgb(255, 255, 255);
     height: 380px;
-    width: 200px;
+    width: 400px;
     padding: 10px;
     border: 5px solid beige;
     transition: 0.2s;
     text-align: center;
+    margin: auto;
 }
 
 .box:hover {
