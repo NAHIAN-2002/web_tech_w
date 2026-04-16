@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+</head>
+
+<body>
+
+    <h2>Product Management</h2>
+
+    <!-- Quantity Input -->
+    <label>Quantity: </label>
+    <input type="number" id="qty" value="0" min="0">
+
+    <br><br>
+
+    <!-- Total Display -->
+    <label>Total Price: </label>
+    <input type="text" id="total" readonly>
+
+    <script>
+        const unitPrice = 1000;
+        const qtyInput = document.getElementById("qty");
+        const totalDisplay = document.getElementById("total");
+
+        qtyInput.addEventListener("input", function () {
+            let qty = parseInt(qtyInput.value) || 0;
+
+            // Validation: prevent negative
+            if (qty < 0) {
+                alert("Quantity cannot be negative!");
+                qty = 0;
+                qtyInput.value = 0;
+            }
+
+            // Calculate total
+            let total = unitPrice * qty;
+            totalDisplay.value = total;
+
+            // Gift coupon condition
+            if (total > 1000) {
+                alert("🎁 You are eligible for a gift coupon!");
+            }
+        });
+    </script>
+
+</body>
+</html>
